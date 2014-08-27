@@ -8,16 +8,21 @@
 
 #import <XCTest/XCTest.h>
 
+#import "ISAppDelegate.h"
+
 @interface UI_InspectorTests : XCTestCase
 
+@property (nonatomic, weak) ISAppDelegate *appDelegate;
+
 @end
+
 
 @implementation UI_InspectorTests
 
 - (void)setUp
 {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    self.appDelegate = [[NSApplication sharedApplication] delegate];
 }
 
 - (void)tearDown
@@ -26,9 +31,19 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testAppHasDelegate
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    XCTAssertNotNil(self.appDelegate, @"There should be an AppDelegate");
+}
+
+- (void)testAppDelegateClass
+{
+    XCTAssertEqualObjects([self.appDelegate class], [ISAppDelegate class], @"AppDelegate should be of type ISAppDelegate.");
+}
+
+- (void)testAppDelegateHasLayerMenu
+{
+    XCTAssertNotNil([[NSApplication sharedApplication] mainMenu], @"Application should have a mainMenu");
 }
 
 @end

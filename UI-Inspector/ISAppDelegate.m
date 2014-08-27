@@ -12,7 +12,8 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    self.layerViewController = [[ISLayerViewController alloc] initWithNibName:nil bundle:nil];
+    self.window.contentView = self.layerViewController.view;
 }
 
 @end

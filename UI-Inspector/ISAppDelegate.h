@@ -8,8 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
+#import "ISLayerViewController.h"
+
 @interface ISAppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSWindow *window;
+@property (strong) IBOutlet ISLayerViewController *layerViewController;
 
 @end

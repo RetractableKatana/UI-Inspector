@@ -12,12 +12,14 @@
 		09C1740C19AD8C2F00BE6ABF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C1740B19AD8C2F00BE6ABF /* main.m */; };
 		09C1741019AD8C2F00BE6ABF /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 09C1740E19AD8C2F00BE6ABF /* Credits.rtf */; };
 		09C1741319AD8C2F00BE6ABF /* ISAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C1741219AD8C2F00BE6ABF /* ISAppDelegate.m */; };
-		09C1741619AD8C2F00BE6ABF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09C1741419AD8C2F00BE6ABF /* MainMenu.xib */; };
 		09C1741819AD8C2F00BE6ABF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C1741719AD8C2F00BE6ABF /* Images.xcassets */; };
 		09C1741F19AD8C2F00BE6ABF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C1741E19AD8C2F00BE6ABF /* XCTest.framework */; };
 		09C1742019AD8C2F00BE6ABF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C173FF19AD8C2F00BE6ABF /* Cocoa.framework */; };
 		09C1742819AD8C2F00BE6ABF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09C1742619AD8C2F00BE6ABF /* InfoPlist.strings */; };
 		09C1742A19AD8C2F00BE6ABF /* UI_InspectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C1742919AD8C2F00BE6ABF /* UI_InspectorTests.m */; };
+		09C1743419AD8CD400BE6ABF /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C1743319AD8CD400BE6ABF /* SceneKit.framework */; };
+		09C1743E19AD8F3400BE6ABF /* ISLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C1743C19AD8F3400BE6ABF /* ISLayerViewController.m */; };
+		09C1744119AD9E5F00BE6ABF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09C1744019AD9E5F00BE6ABF /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,13 +45,16 @@
 		09C1740F19AD8C2F00BE6ABF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		09C1741119AD8C2F00BE6ABF /* ISAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISAppDelegate.h; sourceTree = "<group>"; };
 		09C1741219AD8C2F00BE6ABF /* ISAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISAppDelegate.m; sourceTree = "<group>"; };
-		09C1741519AD8C2F00BE6ABF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		09C1741719AD8C2F00BE6ABF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		09C1741D19AD8C2F00BE6ABF /* UI-InspectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UI-InspectorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C1741E19AD8C2F00BE6ABF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		09C1742519AD8C2F00BE6ABF /* UI-InspectorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UI-InspectorTests-Info.plist"; sourceTree = "<group>"; };
 		09C1742719AD8C2F00BE6ABF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		09C1742919AD8C2F00BE6ABF /* UI_InspectorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UI_InspectorTests.m; sourceTree = "<group>"; };
+		09C1743319AD8CD400BE6ABF /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		09C1743B19AD8F3400BE6ABF /* ISLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISLayerViewController.h; sourceTree = "<group>"; };
+		09C1743C19AD8F3400BE6ABF /* ISLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISLayerViewController.m; sourceTree = "<group>"; };
+		09C1744019AD9E5F00BE6ABF /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09C1743419AD8CD400BE6ABF /* SceneKit.framework in Frameworks */,
 				09C1740019AD8C2F00BE6ABF /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +101,7 @@
 		09C173FE19AD8C2F00BE6ABF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				09C1743319AD8CD400BE6ABF /* SceneKit.framework */,
 				09C173FF19AD8C2F00BE6ABF /* Cocoa.framework */,
 				09C1741E19AD8C2F00BE6ABF /* XCTest.framework */,
 				09C1740119AD8C2F00BE6ABF /* Other Frameworks */,
@@ -115,10 +122,11 @@
 		09C1740519AD8C2F00BE6ABF /* UI-Inspector */ = {
 			isa = PBXGroup;
 			children = (
+				09C1741719AD8C2F00BE6ABF /* Images.xcassets */,
 				09C1741119AD8C2F00BE6ABF /* ISAppDelegate.h */,
 				09C1741219AD8C2F00BE6ABF /* ISAppDelegate.m */,
-				09C1741419AD8C2F00BE6ABF /* MainMenu.xib */,
-				09C1741719AD8C2F00BE6ABF /* Images.xcassets */,
+				09C1744019AD9E5F00BE6ABF /* MainMenu.xib */,
+				09C1743519AD8E1F00BE6ABF /* Layer Viewer */,
 				09C1740619AD8C2F00BE6ABF /* Supporting Files */,
 			);
 			path = "UI-Inspector";
@@ -152,6 +160,16 @@
 				09C1742619AD8C2F00BE6ABF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09C1743519AD8E1F00BE6ABF /* Layer Viewer */ = {
+			isa = PBXGroup;
+			children = (
+				09C1743B19AD8F3400BE6ABF /* ISLayerViewController.h */,
+				09C1743C19AD8F3400BE6ABF /* ISLayerViewController.m */,
+			);
+			name = "Layer Viewer";
+			path = LayerViewer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +252,7 @@
 				09C1740A19AD8C2F00BE6ABF /* InfoPlist.strings in Resources */,
 				09C1741819AD8C2F00BE6ABF /* Images.xcassets in Resources */,
 				09C1741019AD8C2F00BE6ABF /* Credits.rtf in Resources */,
-				09C1741619AD8C2F00BE6ABF /* MainMenu.xib in Resources */,
+				09C1744119AD9E5F00BE6ABF /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09C1743E19AD8F3400BE6ABF /* ISLayerViewController.m in Sources */,
 				09C1741319AD8C2F00BE6ABF /* ISAppDelegate.m in Sources */,
 				09C1740C19AD8C2F00BE6ABF /* main.m in Sources */,
 			);
@@ -291,14 +310,6 @@
 				09C1740F19AD8C2F00BE6ABF /* en */,
 			);
 			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		09C1741419AD8C2F00BE6ABF /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				09C1741519AD8C2F00BE6ABF /* Base */,
-			);
-			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 		09C1742619AD8C2F00BE6ABF /* InfoPlist.strings */ = {
@@ -467,6 +478,7 @@
 				09C1742F19AD8C2F00BE6ABF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09C1743019AD8C2F00BE6ABF /* Build configuration list for PBXNativeTarget "UI-InspectorTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +487,7 @@
 				09C1743219AD8C2F00BE6ABF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
